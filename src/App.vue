@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <img src="@/assets/Banner FNI.jpg" alt="banner fni" id="banner" />
+      <b-card title="Card Title" no-body>
+        <b-card-header header-tag="nav">
+          <menu-publi></menu-publi>
+        </b-card-header>
+        <b-card-body>
+          <router-view></router-view>
+        </b-card-body>
+      </b-card>
+    </div>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+import MenuPubli from '@/components/MenuPubli.vue'
+  export default{
+    components:{
+      MenuPubli
+    }
   }
-}
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -23,6 +28,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#banner {
+  width: 100%;
+  /* height: 200px; */
 }
 </style>
