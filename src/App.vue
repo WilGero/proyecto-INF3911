@@ -26,11 +26,10 @@ import MenuPubli from '@/components/MenuPubli.vue'
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 #banner {
   width: 100%;
-  /* height: 200px; */
 }
 </style>
