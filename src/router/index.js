@@ -5,6 +5,8 @@ import paginaInicio from '@/components/PaginaInicio.vue'
 import RegistroPost from '@/components/RegistroPost.vue'
 import ListConvocatorias from '@/components/ListConvocatorias.vue'
 import ListHabilitados from '@/components/ListHabilitados.vue'
+import BienvenidoUsuario from '@/components/BienvenidoUsuario.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -43,7 +45,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/RegistroCompleto.vue')
+  },
+  {
+    path: '/usr',
+    name: 'bienvenidousr',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: BienvenidoUsuario
   }
+
 
 ]
 
