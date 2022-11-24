@@ -6,6 +6,7 @@ import RegistroPost from '@/components/RegistroPost.vue'
 import ListConvocatorias from '@/components/ListConvocatorias.vue'
 import ListHabilitados from '@/components/ListHabilitados.vue'
 import BienvenidoUsuario from '@/components/BienvenidoUsuario.vue'
+import GestionUsuarios from '@/components/GestionUsuarios.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +54,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: BienvenidoUsuario
+  },
+  {
+    path: '/usr/gestion',
+    name: 'gestionusuarios',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: GestionUsuarios
   }
 
 

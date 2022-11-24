@@ -5,7 +5,7 @@
     <b-form-group id="input-group-1" label="Nombre del postulante:" label-for="input-1" description="Nombre completo del universitario A. Paterno A. Materno y Nombres">
       <b-form-input
         id="input-1"
-        v-model="form.name"
+        v-model="form.nombre"
         placeholder="Ingrese Nombre completo"
         required
       ></b-form-input>
